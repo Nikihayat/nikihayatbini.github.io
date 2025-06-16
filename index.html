@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .title {
+            font-size: 1.3rem;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        .profile-container {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            align-items: flex-start;
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            object-fit: cover;
+            flex-shrink: 0;
+            background-color: #ecf0f1;
+            border: 1px solid #e0e0e0;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .address {
+            font-size: 1rem;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .bio {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            text-align: justify;
+            margin-bottom: 40px;
+        }
+
+        .bio p {
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 8px;
+        }
+
+        .section-title a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .section-title a:hover {
+            text-decoration: underline;
+        }
+
+        .post-item, .publication-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .post-item:last-child, .publication-item:last-child {
+            border-bottom: none;
+        }
+
+        .post-date {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .post-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .post-title a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        .post-title a:hover {
+            color: #3498db;
+            text-decoration: underline;
+        }
+
+        .publication-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .publication-venue {
+            color: #7f8c8d;
+            font-style: italic;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .email-link {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .profile-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .name {
+                font-size: 2rem;
+            }
+            
+            .bio {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="name">Your Name</h1>
+        <p class="title">Your Professional Title</p>
+    </header>
+
+    <div class="profile-container">
+        <img src="https://via.placeholder.com/200x200/ecf0f1/7f8c8d?text=Your+Photo" alt="Profile Picture" class="profile-pic">
+        
+        <div class="contact-info">
+            <div class="address">
+                Your Address Line 1<br>
+                Your Address Line 2<br>
+                <a href="mailto:your.email@example.com" class="email-link">your.email@example.com</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bio">
+        <p>Hello! I'm [Your Name]. I completed my [Degree] in [Field] at [University], where I was mentored by [Dr. Mentor Name]. My research encompasses various areas within [your field] such as [area 1], [area 2], [area 3], and [area 4].</p>
+        
+        <p>I am particularly committed to [your specific interest/commitment]. I am an advocate for [cause/methodology], promoting [values]. I believe in the power of [your field] to [impact] and enjoy solving complex problems with effective solutions.</p>
+        
+        <p>Additionally, I have a keen interest in [specific application area]. This includes working on [specific projects/goals]. My aim is to [your professional mission] through the application of [your expertise].</p>
+    </div>
+
+    <section class="section">
+        <h2 class="section-title"><a href="/blog/">latest posts</a></h2>
+        
+        <div class="post-item">
+            <div class="post-date">Dec 15, 2024</div>
+            <div class="post-title">
+                <a href="/blog/2024/your-latest-post/">Your Latest Blog Post Title</a>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-date">Nov 28, 2024</div>
+            <div class="post-title">
+                <a href="/blog/2024/another-post/">Another Interesting Post</a>
+            </div>
+        </div>
+        
+        <div class="post-item">
+            <div class="post-date">Oct 12, 2024</div>
+            <div class="post-title">
+                <a href="/blog/2024/research-insights/">Research Insights and Findings</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title"><a href="/publications/">selected publications</a></h2>
+        
+        <div class="publication-item">
+            <div class="publication-title">Your Important Research Paper Title</div>
+            <div class="publication-venue">In Proceedings of the Important Conference 2024, Location, Date, 2024</div>
+        </div>
+        
+        <div class="publication-item">
+            <div class="publication-title">Another Significant Publication</div>
+            <div class="publication-venue">Journal of Your Field, Vol. X, No. Y, Pages Z-W, 2023</div>
+        </div>
+        
+        <div class="publication-item">
+            <div class="publication-title">Collaborative Research Work</div>
+            <div class="publication-venue">In The Workshop on Specialized Topic, Conference Location, Month Year</div>
+        </div>
+    </section>
+</body>
+</html>
